@@ -1,0 +1,70 @@
+\documentclass[10pt,twocolumn]{article} 
+
+% use the oxycomps style file
+\usepackage{oxycomps}
+
+% read references.bib for the bibtex data
+\bibliography{references.bib}
+
+% include metadata in the generated pdf file
+\pdfinfo{
+    /Title (Ethics Throughout COMPS)
+    /Author (Brady Hagen)
+}
+
+% set the title and author information
+\title{Ethical Concerns and Considerations In COMPS}
+\author{Brady Hagen}
+\affiliation{Occidental College}
+\email{bhagen@oxy.edu}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This paper looks to address the Ethical concerns surrounding my Comprehensive Project at Occidental College. My current project’s plan is to create a website that functions less as a store-front but more as an interactive experience and game that needs to be solved or beaten in order to access any merchandise. The experience will have interactive elements, unique visuals, and an emphasis on challenge in order to create exclusivity for the products. However, due to the nature of this project there are a number of ethical concerns that must be addressed before development can progress. In this paper, I will be focusing on the ethical concerns that are faced by designers and developers of immersive online experiences. This includes the ethical implications of accessibility, as well as the ethics of creating an immersive experience for a brand or entity.
+
+\section{Ethical Concerns}
+\subsection{Accessibility}
+
+One of the main ethical concerns in creating immersive online experiences is accessibility. According to The World Wide Web Consortium, the premier voice on advocating and evaluating the web’s fundamental accessibility guidelines, one of the key tenets of the web is that it "is designed for all people" \cite{WebAccess}. This idea extends further than just captions or colorblind filters but to all aspects of design. Accessibility extends itself to language, hardware, software and practically everything else under the sun. To make something accessible means to not exclude individuals from your site or service.
+The many different types of hardware that a website can run on is a fact that many web developers are all too aware of. Quite a bit of time and energy is spent attempting to create websites that not only run on all sorts of different hardware, but also look pleasing to the eye and not a cluttered mess. People use smartwatches, smart TV’s, phones, outdated browsers and software, old hardware, and slow or inconsistent internet connections to consume content across the world wide web. 
+This poses a clear and present problem for a website that is designed to utilize 3D elements and some sort of game-play mechanics. Most people that visit the website on anything but a classical desktop or laptop interface will struggle with correctly interacting with various website elements. Depending on the control scheme that is chosen, it could become impossible to directly interact with the website. In some instances a mouse and keyboard would be absolutely necessary, which would be excluding a majority of the population. According to Google Analytics, “mobile devices accounted for 61 percent of all website visits in 2020, with desktops accounting for only 35.7 percent”\cite{MobileVsDesktop}. By needing a mouse and keyboard to navigate the web app it would exclude a majority of all users. Even if users were to create a mish mash of a keyboard connected to a phone, the hardware used to display the website might also become a limiting factor. Depending on the fidelity of the assets the hardware of the phone may struggle to even properly display the graphics, may overheat, or take forever to properly load. The lack of accessibility in this project for those with less than optimal hardware is another key reason as to why it should be deemed unethical. Even after all of that, someone with a desktop computer with a mouse and keyboard running an outdated version of an internet browser, or an outdated operating system will not be able to access the website. The game itself uses modern javascript frameworks that have compatibility issues with Internet Explorer and other browsers that don’t run OpenGL. The game itself only caters to a small subset of the world wide web, namely those with enough money and know how to keep their machines hardware and software up to date.
+
+Accessibility on the web for those with disabilities, even if it’s a 3D game, is vital. While on first glance adapting something that is purely visual to all audiences seems unfeasible, but Kelle and Garcia in Usability and Accessibility in Web 3D disagree. They discuss how it actually is possible in adapting a 3D environment: “As Web 3D evolves and more and more services are offered, discrimination will become critical… It’s also considered a non-sense, impossible mission: Web3D is considered visual, thus it’s a nonsense trying to adapt it to blind people… However, accessibility is not impossible, as it has been demonstrated in similar contexts like 3D games for example the game Terraformers, a 3D game able to be played by blind people” \cite{Accessibilityin3D}. They continue to explain how most 3D web games follow a consistent architectural principle. Web3D typically follow a “thin client, thick server” concept. This means that most user client’s can accommodate for a user’s very limited client resources, while allowing for most computations and content additions to be done server side. While this was a novel concept in the early 2000’s it has become tried and true in recent decades, as most game developers only put what is absolutely necessary on the client and instead interface with a central server. This minimizes resource usage and also prevents client side exploits as all interactions must be double checked through a server to determine validity. This also means that the door to providing accessibility tools is wide open. The user’s client creates a degree of abstraction as a 3D world is transformed into 2D and body movements translated to keystrokes or mouse movements. This abstraction and subsequent translation means different client interfaces could be developed for users with specific disabilities to increase the usability. There can and should be a number of different user clients with varying levels of assistive technologies that all interface with the same server architecture. 
+While Kelle and Garcia’s paper is fairly high concept and instead focuses on a formula to correctly calculate a usability and accessibility score for specific Web3D applications, the concept’s provided still hold true and prove that it is possible, albeit difficult.
+
+The last key factor of accessibility we’ll be analyzing is the exclusionary practices inherent to the website’s marketing and design philosophy. In recent years a subset of the fashion industry has been struck with the idea of ‘hype’. Creating clothing that has a level of scarcity and demand to generate hype has become a core tenant to a number of different clothing brands. By far the most famous and successful of these brands is Supreme, which managed to craft a culture of scarcity that took the world by storm from 2017 to 2019. The strangest part of it all is that the clothing itself is mass-produced with an estimated 10,000 of each product per weekly drop. However the secret sauce is that the 10,000 number is carefully curated to keep supply just below the demand. This creates a valuable re-seller market in which individuals purchase clothing just to turn around and resell it at a substantial markup. This re-seller market in turn boosts the demand for the items in question, creating a feedback loop of demand and scarcity that drives up sales. On top of Supreme’s limited quantity it also has brick & mortar exclusives that are limited to select locations in Los Angeles, New York, London, or Tokyo. Outside of those locations it’s impossible to get a certain shirt or hoodie. All of this culminates in a brand whose prices are far more affordable than your average luxury brand, but with the same amount of clout surrounding it making it all the more appealing to your middle class teenager. This project aims to cash in on the growing trend of exclusivity, not through exclusive in-person drops, but by creating scarcity through accomplishment. 
+
+The project in question seeks to create an interactive interface that rewards participants by giving them access to merchandise only after an arbitrary level or goal has been reached. This feeds into the idea of scarcity as a resource and also directly appeals to those who love to showcase their accomplishments. However, when it comes to accessibility this project seems to strive in the opposite direction by making its merchandise whole inaccessible to all but the most devoted crowd. 
+
+ 
+There is a clear distinction between a 3D video game and a 3D interactive web-page. According to Kelle and Garcia in Usability and Accessibility in Web 3D the goals of the application in question must be considered when defining it as either a game or a web app. Effectively excluding a significant portion of their potential market. This is not only unethical, but could also end up affecting the bottom line of any sort of brand looking to buy into this idea. As a new trend of marketing has emerged, especially to those that seek to appeal to Gen Z, of inclusivity as the cost of entry. Promoting diversity and inclusion has slowly become far more common as “brands promoting diversity and inclusivity through marketing campaigns has become the norm. It no longer feels revolutionary for a company to take this approach, and yet the strategy continues to prove effective for brands not only in gaining new customers but in driving sales.” \cite{ScarcitySupreme}
+Because of the aforementioned accessibility issues, it becomes clear that those who can gain from this project are a select few, and those few currently have a disproportionate amount of privilege. They require up to date machines with specific hardware specifications, enough time to play and beat a specific game in a specified time frame, and they then must also have enough disposable income to spend on merchandise after the fact. This project concentrates power in a small subset of possible.
+
+\subsection{Environment}
+
+
+The fashion industry seems as ubiquitous as it is harmless. Everybody needs clothes after all, and besides what’s so harmful about a cotton t-shirt? However, in recent years the fashion industry’s disastrous impact on the environment has become more apparent. According to the UN’s Environment Programme “the fashion industry is the second-biggest consumer of water and is responsible for 8-10 of global carbon emissions – more than all international flights and maritime shipping combined.” \cite{UNFashion} The massive emissions surrounding fashion are derived mainly from its entirely unsustainable business model of “Fast Fashion”. According to Sustain Your Style, a global consulting firm dedicated to creating sustainable practices in fashion, Fast Fashion is defined as “Mass-production of cheap, disposable clothing.” \cite{SustainYourStyle} Trends seem to be appearing quicker than ever and because of that it becomes more and more difficult to keep up. As new collections arrive our current wardrobe becomes out of date, encouraging us to buy even more, this is aided by the fact that the quality of clothing has declined as well meaning we need to buy more and more to ensure our current wardrobe doesn’t look worn out. 
+
+While simply creating a fashion brand doesn’t inherently mean one is inherently unethical, it is vital to consider the environmental impacts associated with clothing and textiles as a whole. Textile factories, toxic dyes, high water consumption, exorbitant carbon emissions, polyester and micro-plastics, and overfilling landfills are all important factors associated with making clothing in the 21st century. One must make oneself aware of not only the issues but also how to counteract such dangerous trends.
+
+If one is to make a website predicated upon constant releases of new clothing in which users feel the need to buy due to artificial demand or hype, the project would be contributing unnecessarily to the Fast Fashion industry and by extension to the pollution of our environment. Such a practice would be unethical.
+
+
+\section{Recommendations}
+
+While the project in its current form is unethical, some considerations can be made to minimize its negative impact.
+
+Accessibility is a vital part of the web, and thus must be a key focus of development. Although interactive 3D applications infamously struggle to appeal to all audiences regardless of their disability– a number of developmental decisions can and must be made.
+
+Multiple web clients to cater to different users and their different use cases. By storing most information on a central server different clients for specific users can be made with minimal overhead cost. If the game is only present on the web creating extensive toggles to remove or change features is mandatory. These features should range from colorblind filters and subtitles, to enhanced auditory and spatial simulation.
+
+A lot of care must be taken to ensure that the clothing produced is of high quality and made with sustainable materials. Clothes must be made in countries with stricter environmental regulations for factories, with organic fibers free of dyes, recycled materials, and factories that engage in humane practices both in how they manage their waste and treat their employees. Although this will be difficult to vet one’s manufacturer, especially if it exists overseas, it’s necessary to minimize the negative impacts associated with the Fashion Industry.
+Although by fulfilling these recommendations the project still won’t be truly ethical, as the website’s core design principles require it to be inherently exclusionary, it is a step in the right direction to minimize its negative effects.
+
+\printbibliography 
+
+\end{document}
